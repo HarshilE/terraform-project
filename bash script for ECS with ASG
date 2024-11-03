@@ -1,8 +1,0 @@
-#!/bin/bash
-
-cat <<'EOF' >> /etc/ecs/ecs.config
-ECS_CLUSTER= This line sets the ECS cluster name to "name of the instance" ECS (Elastic Container Service) uses this configuration to determine which cluster the instance should join.
-ECS_LOGLEVEL=debug
-ECS_CONTAINER_INSTANCE_TAGS={"Name":"give name here"}
-ECS_ENABLE_TASK_IAM_ROLE=true
-EOF
